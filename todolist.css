@@ -1,0 +1,133 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+
+  ul {
+    margin: 15px;
+    padding: 0;
+  }
+  
+ 
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 20px 8px 12px 40px;
+    background: #eee;
+    font-size: 25px;
+    transition: 0.2s;
+    border-radius: 15px;
+  
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+
+  ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+
+  ul li:hover {
+    background: #d1c1a9;
+  }
+  
+
+  ul li.checked {
+    background: #d1c1a9;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: #14110b;
+    color: white;
+  }
+  
+
+  .header {
+ 
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+  }
+  
+
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 15px;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+  
+
+  .addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d1c1a9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .addBtn:hover {
+    background-color: #d1c1a9;
+  }
+
+  body {
+      /* background-image: url(https://cdn.pixabay.com/photo/2018/08/25/09/31/parchment-3629623_960_720.png); */
+      background-image: url(https://64.media.tumblr.com/38498a9113deca4a175fbb8a5e2d1cff/tumblr_or87qnRZsW1tzg2xno1_400.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: 'Cedarville Cursive', cursive;
+  }
+
+  .addBtn {
+      border-radius: 15px;
+  }
+
+  #myInput {
+      border-radius: 15px;
+  }
+
+
