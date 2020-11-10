@@ -1,0 +1,64 @@
+body {
+    font: 55px "Gigi", Futura, sans-serif;
+    margin: 20px;
+    color: #102915;
+  }
+  
+  ol, ul {
+    padding-left: 30px;
+  }
+  
+  .board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  
+  .status {
+    margin-bottom: 10px;
+  }
+  
+  .square {
+    border: 8px solid white;
+    float: left;
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 200px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 200px;
+    background: transparent;
+    font: 110px "Gigi", Futura, sans-serif;
+  }
+  
+  .square:focus {
+    outline: none;
+  }
+  
+  .kbd-navigation .square:focus {
+    background: #ddd);
+  }
+  
+  .game {
+    display: flex;
+    flex-direction: row;
+  }
+  .game-info {
+    margin-left: 40px;
+    font-weight: bold;
+  }
+
+  body {
+    background-image: url("https://seniorservicesmidland.org/wp-content/uploads/2015/06/Picnic-Season.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .square {
+    border-radius: 50%;
+  }
+
+  
