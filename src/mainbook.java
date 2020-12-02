@@ -1,3 +1,7 @@
+package bookpackage;
+
+import java.io.FileReader;
+import java.io.FileWriter;
 
 public class mainbook {
 	
@@ -11,7 +15,7 @@ public class mainbook {
 		System.out.println("We are open " + bookNook.daysofweek + " from " + bookNook.hours + ".");
 		System.out.println("Do we have USED books? The answer is: " + bookNook.usedbooks + "!");
 		bookNook.loadTitles();
+		
 	}
-	
 }
 
