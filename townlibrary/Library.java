@@ -22,16 +22,16 @@ public class Library {
 			Library secondLibrary = new Library("228 Liberty Street");
 			
 			ArrayList<String> firstlibrary = new ArrayList<>();
-			firstlibrary.add("The Da Vinci Code");
-			firstlibrary.add("Le Petit Prince");
-			firstlibrary.add("A Tale of Two Cities");
-			firstlibrary.add("The Lord of the Rings");
+			firstlibrary.add("The Da Vinci Code(0)");
+			firstlibrary.add("Le Petit Prince(1)");
+			firstlibrary.add("A Tale of Two Cities(2)");
+			firstlibrary.add("The Lord of the Rings(3)");
 			
 			ArrayList<String> secondlibrary = new ArrayList<>();
-			secondlibrary.add("Their Eyes Were Watching God");
-			secondlibrary.add("One Hundred Years of Solitude");
-			secondlibrary.add("The Picture of Dorian Gray");
-			secondlibrary.add("The Wheel of Time");
+			secondlibrary.add("Their Eyes Were Watching God(0)");
+			secondlibrary.add("One Hundred Years of Solitude(1)");
+			secondlibrary.add("The Picture of Dorian Gray(2)");
+			secondlibrary.add("The Wheel of Time(3)");
 			
 			String one = "The Da Vinci Code";
 			String two = "Le Petit Prince";
@@ -54,10 +54,14 @@ public class Library {
 			System.out.println(secondlibrary);
 	        System.out.println();
 	        
-	        System.out.println("Enter 'four' to borrow The Lord of the Rings");
-	        String entry = userInput.next();
-	        	do  {
-	        		System.out.println("You have successfully borrowed: " + (firstlibrary.get(3)));
-	        	} while (entry == four); 
+	        System.out.println("Enter the book number to borrow a book from the Main Street library");
+	        int entry = userInput.nextInt();
+	        System.out.println("You have successfully borrowed: " + (firstlibrary.get(entry)));
+	        System.out.println();
+	        
+	        System.out.println("Enter the book number to borrow a book from the Liberty Street library");
+	        int key = userInput.nextInt();
+	        System.out.println("You have successfully borrowed: " + (secondlibrary.get(key)));
+
 		}
 }
