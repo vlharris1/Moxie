@@ -3,7 +3,7 @@ body {
 		url(https://ih1.redbubble.net/image.519028912.9445/flat,750x1000,075,f.u2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Audiowide', sans-serif;
 }
 
 .newtitle {
@@ -12,4 +12,8 @@ body {
 
 .new {
 	background-color: white;
+}
+
+.navfont {
+	font-family: 'Open Sans', sans-serif;
 }
