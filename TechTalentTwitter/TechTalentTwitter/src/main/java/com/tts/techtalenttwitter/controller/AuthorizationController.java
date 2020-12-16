@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
@@ -24,7 +25,7 @@ public class AuthorizationController {
     public String login(){
         return "login";
     }
-    
+	    
     @GetMapping(value="/signup")
     public String registration(Model model){
         User user = new User();
@@ -41,9 +42,10 @@ public class AuthorizationController {
         }
         if (!bindingResult.hasErrors()) {
             
-            model.addAttribute("success", "Sign up successful!");
+            model.addAttribute("success", "Tubular!");
             model.addAttribute("user", new User());
         }
         return "registration";
-    }
+    } 
+    
 }

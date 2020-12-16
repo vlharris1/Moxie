@@ -25,16 +25,12 @@ public class UserService {
 	
 	
 	@Autowired
-	public UserService(UserRepository userRepository, RoleRepository roleRepository) {
+	public UserService(UserRepository userRepository, RoleRepository roleRepository, BCryptPasswordEncoder bCryptPasswordEncoder) {
 		this.userRepository = userRepository;
-		this.roleRepository = roleRepository;	
+		this.roleRepository = roleRepository;
+		this.bCryptPasswordEncoder = bCryptPasswordEncoder;
 	}
 	
-	@Bean
-    public BCryptPasswordEncoder passwordEncoder() {
-        BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
-        return bCryptPasswordEncoder;
-    }
 		
 	public User findByUsername(String username) {
 		return userRepository.findByUsername(username);
@@ -50,6 +46,7 @@ public class UserService {
 	
 	public User saveNewUser(User user) {
 		
+		user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
 		user.setActive(1);
 		Role userRole = roleRepository.findByRole("USER");
 		user.setRoles(new HashSet<Role>(Arrays.asList(userRole)));
