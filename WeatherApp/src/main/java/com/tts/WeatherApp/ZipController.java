@@ -1,0 +1,31 @@
+//package com.tts.WeatherApp;
+//
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.stereotype.Controller;
+//import org.springframework.ui.Model;
+//import org.springframework.web.bind.annotation.GetMapping;
+//import org.springframework.web.bind.annotation.PostMapping;
+//import org.springframework.web.bind.annotation.RequestMapping;
+//import org.springframework.web.bind.annotation.RequestParam;
+//import org.springframework.web.bind.annotation.ResponseBody;
+//
+//@Controller
+//@RequestMapping
+//public class ZipController {
+//		
+//		@Autowired
+//		private ZipRepository zipRepository;
+//		
+//		@PostMapping
+//		public @ResponseBody String addNewZipCode(@RequestParam String zipCode) {
+//			Zipcode z = new Zipcode();
+//			zipRepository.save(z);
+//			return "index";
+//		}
+//		
+//		@GetMapping
+//		public @ResponseBody Iterable<Zipcode> getAllZipcodes() {
+//			return zipRepository.findAll();
+//		}
+//		
+//}
