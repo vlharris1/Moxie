@@ -50,6 +50,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 authorizeRequests()
                 .antMatchers("/console/**").permitAll()
                 .antMatchers("/login").permitAll()
+                .antMatchers("/guestTweet").permitAll()
+                .antMatchers("/guestfeed").permitAll()
                 .antMatchers("/signup").permitAll()
                 .antMatchers("/login.css").permitAll()
                 .antMatchers("/custom.js").permitAll()

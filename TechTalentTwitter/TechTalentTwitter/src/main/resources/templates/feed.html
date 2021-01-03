@@ -9,14 +9,17 @@
 <body>
 	<div class="container">
 		<div th:replace="fragments/navbar"></div>
+		<div class = "tweetsfont">
 		<div class="new">
 			<h2 th:if='${#lists.isEmpty(tweetList)}'>No tweets available</h2>
 		</div>
 		<div class="new">
 			<div class="container">
+			
 				<div class="new">
-					<h2>Tweets</h2>
+					<h2 style="font-family: 'Audiowide'">Tweets</h2>
 				</div>
+				
 				<div th:each="tweet:${tweetList}">
 					<h5>
 						@<span th:text="${tweet.user.username}"></span><span
@@ -24,6 +27,7 @@
 					</h5>
 					<p th:utext="${tweet.message}"></p>
 				</div>
+			</div>
 			</div>
 		</div>
 	</div>

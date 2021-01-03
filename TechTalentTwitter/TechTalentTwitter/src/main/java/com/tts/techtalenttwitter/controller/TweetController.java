@@ -10,15 +10,20 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.tts.techtalenttwitter.model.Guest;
 import com.tts.techtalenttwitter.model.Tweet;
 import com.tts.techtalenttwitter.model.TweetDisplay;
 import com.tts.techtalenttwitter.model.User;
 import com.tts.techtalenttwitter.service.TweetService;
 import com.tts.techtalenttwitter.service.UserService;
+
 
 @Controller
 public class TweetController {
@@ -73,4 +78,6 @@ public class TweetController {
         model.addAttribute("tag", tag);
         return "taggedTweets";
     }
+    
+    
 }

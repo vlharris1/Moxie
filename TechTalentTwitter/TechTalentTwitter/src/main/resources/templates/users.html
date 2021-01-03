@@ -12,6 +12,7 @@
 	<div class="container">
 		<div th:replace="fragments/navbar"></div>
 		<h2 style="color: #fc03ad">Users</h2>
+		<div class = "tweetsfont">
 		<div class="new">
 			<div class="list-group" th:each="user:${users}">
 
@@ -56,6 +57,7 @@
 				</form>
 
 			</div>
+		</div>
 		</div>
 	</div>
 </body>

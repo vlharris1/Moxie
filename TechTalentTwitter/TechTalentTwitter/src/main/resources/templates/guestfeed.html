@@ -3,29 +3,22 @@
 	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
 
 <head>
-<title>Feed</title>
+<title>Guest Feed</title>
 <link th:replace="fragments/fraggle.html :: headerfiles" />
 </head>
 <body>
 	<div class="container">
 		<div th:replace="fragments/navbar"></div>
 		<div class = "tweetsfont">
-		<div class="new">
-			<h2 th:if='${#lists.isEmpty(tweetList)}'>No tweets available</h2>
-		</div>
+		
 		<div class="new">
 			<div class="container">
 			
-				<div class="new">
-					<h2 style="font-family: 'Audiowide'">Tweets</h2>
-				</div>
-				
-				<div th:each="tweet:${tweetList}">
-					<h5>
-						@<span th:text="${tweet.user.username}"></span><span
-							th:text="${dates}"></span>
-					</h5>
-					<p th:utext="${tweet.message}"></p>
+		
+				<h2 style="font-family: 'Audiowide'">Tubular Tweet!</h2>
+				<p th:text="'@Guest: ' + ${guest.guestmsg}" style="font-size: 25px"></p>
+					
+					
 				</div>
 			</div>
 			</div>

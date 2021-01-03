@@ -12,7 +12,7 @@
 		<div th:replace="fragments/navbar"></div>
 		<div class="welcome">
 			<div class="new">
-				<h2>Welcome</h2>
+				<h2>This site is totally rad!</h2>
 			</div>
 		</div>
 		<form th:action="@{/login}" method="post">
@@ -31,5 +31,9 @@
 			<button class="btn btn-md btn-success btn-block" name="Submit"
 				value="Signup" type="Submit">Sign up</button>
 		</form>
+		
+			<br />
+			<a class="btn btn-md btn-success btn-block" href="guestTweet" type="Submit">Tweet as a gnarly Guest</a>		
+		
 	</div>
 </body>

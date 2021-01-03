@@ -7,13 +7,23 @@ body {
 }
 
 .newtitle {
-	color: #fc03ad
+	color: #fc03ad;
+	font-size: 25px;
 }
 
 .new {
 	background-color: white;
+	box-shadow: -1px -1px 0 #c7c3b9,
+  				1px -1px 0 #c7c3b9,
+  				-1px 1px 0 #c7c3b9,
+  				1px 1px 0 #c7c3b9;
+  	border-radius: 3px;
 }
 
 .navfont {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Calibri Light', sans-serif;
+}
+
+.tweetsfont {
+	font-family: 'Calibri';
 }
